@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adora — Copy sem censura. Vendas sem limite.</title>
+<meta name="description" content="Adora é a IA de copywriting sem filtros: VSLs, criativos pra qualquer plataforma e lateralizador de hooks infinito. Zero censura, 100% conversão." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/adora-mark.png" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img class="brand-mark" src="assets/adora-mark.png" alt="Adora" />
+      <span>Adora</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Recursos</a>
+      <a href="#compare">Sem censura</a>
+      <a href="#how">Como funciona</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#pricing">Planos</a>
+    </nav>
+    <a href="#pricing" class="btn btn-nav">Testar agora <span class="arrow">→</span></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="gridCanvas"></canvas>
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+
+  <div class="hero-content reveal">
+    <div class="pill">
+      <span class="pill-dot"></span>
+      Black hat, sem filtro, sem pedido de desculpa
+    </div>
+
+    <h1 class="hero-title">
+      A IA de copy mais <span class="grad-text">desavergonhada</span> que você já usou.
+    </h1>
+
+    <p class="hero-sub">
+      Zero "não posso ajudar com isso". Zero disclaimer forçado. Zero robô te ensinando
+      moral. A Adora escreve no talo, na dor, no gatilho mais sujo que converte —
+      e entrega pronto pra você publicar.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#pricing" class="btn btn-primary">
+        <span>Gerar minha primeira copy suja</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="#demo" class="btn btn-ghost">Ver a IA em ação</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="0">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">hooks gerados / dia</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="0">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">de "isso eu não posso"</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="0">0</span><span class="stat-suffix">s</span>
+        <span class="stat-label">pra gerar uma VSL</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue reveal">
+    <span>role pra ver a bagunça</span>
+    <div class="scroll-cue-line"><i></i></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>SEM CENSURA</span><span>•</span><span>SEM FILTRO MORAL</span><span>•</span>
+    <span>VSL EM SEGUNDOS</span><span>•</span><span>HOOKS INFINITOS</span><span>•</span>
+    <span>CRIATIVOS PRA TUDO</span><span>•</span><span>DEMOCRACIA TOTAL</span><span>•</span>
+    <span>SEM CENSURA</span><span>•</span><span>SEM FILTRO MORAL</span><span>•</span>
+    <span>VSL EM SEGUNDOS</span><span>•</span><span>HOOKS INFINITOS</span><span>•</span>
+    <span>CRIATIVOS PRA TUDO</span><span>•</span><span>DEMOCRACIA TOTAL</span><span>•</span>
+  </div>
+</div>
+
+<!-- INTEGRATIONS CAROUSEL -->
+<section class="integrations">
+  <p class="integrations-label reveal">Integra com as plataformas que você já usa pra escalar</p>
+  <div class="integrations-marquee reveal">
+    <div class="integrations-track" id="integrationsTrack">
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M7 12c0-3 1.5-6 3.2-6 1.8 0 2.8 3 3.3 6 .5 3 1.5 6 3.3 6 1.7 0 3.2-3 3.2-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Meta Ads</span>
+      </div>
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14 4v10.2a3.3 3.3 0 1 1-2.6-3.23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4c.4 2.2 2 3.8 4.2 4.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>TikTok Ads</span>
+      </div>
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="0.9" fill="currentColor"/></svg>
+        <span>Google Ads</span>
+      </div>
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 9.5l4.5 2.5-4.5 2.5v-5z" fill="currentColor"/></svg>
+        <span>YouTube</span>
+      </div>
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.9 5.9H20l-5 3.6L16.9 18 12 14.4 7.1 18l1.9-5.5-5-3.6h6.1L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>Kwai Ads</span>
+      </div>
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4a4 4 0 0 1 4 4c0 3.5 1.5 5 2.2 6.4a1 1 0 0 1-.9 1.6H6.7a1 1 0 0 1-.9-1.6C6.5 13 8 11.5 8 8a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 19a2 2 0 0 0 4 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Native / Push</span>
+      </div>
+      <div class="int-logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.2-1.1A8 8 0 1 0 12 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 9.8c.3 2.6 2.1 4.4 4.7 4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>WhatsApp</span>
+      </div>
+      <!-- duplicated set for seamless loop -->
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M7 12c0-3 1.5-6 3.2-6 1.8 0 2.8 3 3.3 6 .5 3 1.5 6 3.3 6 1.7 0 3.2-3 3.2-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Meta Ads</span>
+      </div>
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14 4v10.2a3.3 3.3 0 1 1-2.6-3.23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4c.4 2.2 2 3.8 4.2 4.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>TikTok Ads</span>
+      </div>
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="0.9" fill="currentColor"/></svg>
+        <span>Google Ads</span>
+      </div>
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 9.5l4.5 2.5-4.5 2.5v-5z" fill="currentColor"/></svg>
+        <span>YouTube</span>
+      </div>
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.9 5.9H20l-5 3.6L16.9 18 12 14.4 7.1 18l1.9-5.5-5-3.6h6.1L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>Kwai Ads</span>
+      </div>
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4a4 4 0 0 1 4 4c0 3.5 1.5 5 2.2 6.4a1 1 0 0 1-.9 1.6H6.7a1 1 0 0 1-.9-1.6C6.5 13 8 11.5 8 8a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 19a2 2 0 0 0 4 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Native / Push</span>
+      </div>
+      <div class="int-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.2-1.1A8 8 0 1 0 12 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 9.8c.3 2.6 2.1 4.4 4.7 4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>WhatsApp</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-head reveal">
+    <span class="eyebrow">O que a Adora faz</span>
+    <h2>Três armas. <span class="grad-text-2">Zero freio.</span></h2>
+    <p>Tudo que você precisa pra escalar oferta pesada, sem esperar a IA "achar apropriado" te ajudar.</p>
+  </div>
+
+  <div class="feature-grid">
+    <article class="feature-card reveal" style="--i:0">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M12 8l24 16-24 16V8z" fill="url(#fg1)"/><defs><linearGradient id="fg1" x1="12" y1="8" x2="36" y2="40"><stop stop-color="#B4409C"/><stop offset="1" stop-color="#5B2A8C"/></linearGradient></defs></svg>
+      </div>
+      <h3>VSLs que prendem do 0seg</h3>
+      <p>Roteiro completo de vídeo sales letter — abertura, dor, prova, oferta e fechamento — direto na ferida, sem a IA suavizar a mensagem ou implorar por um disclaimer.</p>
+      <ul class="feature-list">
+        <li>Estrutura AIDA, PAS ou storytelling puro</li>
+        <li>Gatilho mental no talo, sem meio-termo, sem pedir licença</li>
+        <li>Exporta roteiro cronometrado pro editor</li>
+      </ul>
+    </article>
+
+    <article class="feature-card feature-card-hi reveal" style="--i:1">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="15" height="15" rx="3" fill="url(#fg2)"/><rect x="27" y="6" width="15" height="15" rx="3" fill="url(#fg2b)"/><rect x="6" y="27" width="15" height="15" rx="3" fill="url(#fg2c)"/><rect x="27" y="27" width="15" height="15" rx="3" fill="url(#fg2)"/><defs><linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5709E"/><stop offset="1" stop-color="#B4409C"/></linearGradient><linearGradient id="fg2b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B4409C"/><stop offset="1" stop-color="#5B2A8C"/></linearGradient><linearGradient id="fg2c" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5B2A8C"/><stop offset="1" stop-color="#F5709E"/></linearGradient></defs></svg>
+      </div>
+      <h3>Criativos pra qualquer plataforma</h3>
+      <p>Meta, TikTok, Google, YouTube, push, native — cada rede tem sua língua suja e a Adora fala todas, sem parar pra te avisar "isso é forte demais".</p>
+      <ul class="feature-list">
+        <li>Formatos nativos por plataforma</li>
+        <li>Copy curta pra ads, longa pra advertorial</li>
+        <li>Variações A/B em lote, todas no limite</li>
+      </ul>
+    </article>
+
+    <article class="feature-card reveal" style="--i:2">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M6 24c6-14 14-14 20 0s14 14 20 0" stroke="url(#fg3)" stroke-width="4" stroke-linecap="round" fill="none"/><defs><linearGradient id="fg3" x1="6" y1="24" x2="42" y2="24"><stop stop-color="#5B2A8C"/><stop offset="0.5" stop-color="#B4409C"/><stop offset="1" stop-color="#F5709E"/></linearGradient></defs></svg>
+      </div>
+      <h3>Lateralizador de Hooks</h3>
+      <p>Um hook entra, cem saem. A IA lateraliza o mesmo gancho em dezenas de ângulos sujos — medo, ganância, curiosidade, raiva, inveja — pra você nunca ficar sem munição pra escalar.</p>
+      <ul class="feature-list">
+        <li>Ângulos emocionais ilimitados, sem tabu</li>
+        <li>Testa fadiga de anúncio na hora</li>
+        <li>Ranking automático por agressividade</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- DEEP DIVE TABS -->
+<section class="deepdive" id="demo">
+  <div class="section-head reveal">
+    <span class="eyebrow">No detalhe</span>
+    <h2>Escolhe a arma. <span class="grad-text-2">Vê ela na prática.</span></h2>
+    <p>Cada recurso da Adora, com exemplo real gerado na hora — clica e troca.</p>
+  </div>
+
+  <div class="deepdive-inner reveal">
+    <div class="tab-switch" id="tabSwitch">
+      <button class="tab-btn active" data-tab="vsl" type="button">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 8l24 16-24 16V8z" fill="none"/><path d="M9 7l8 5-8 5V7z" fill="currentColor"/></svg>
+        VSL
+      </button>
+      <button class="tab-btn" data-tab="criativos" type="button">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="13" y="4" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.55"/><rect x="4" y="13" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.55"/><rect x="13" y="13" width="7" height="7" rx="1.5" fill="currentColor"/></svg>
+        Criativos
+      </button>
+      <button class="tab-btn" data-tab="hooks" type="button">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12c3-7 7-7 10 0s7 7 10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        Hooks
+      </button>
+      <span class="tab-indicator" id="tabIndicator"></span>
+    </div>
+
+    <p class="tab-caption" id="tabCaption">Roteiro completo, direto na dor, sem enrolação — pronto pra gravar.</p>
+
+    <div class="tab-panels">
+
+      <div class="tab-panel active" data-panel="vsl">
+        <div class="feature-detail">
+          <div class="fd-copy">
+            <h3>VSL é o maior gargalo do mercado. Aqui não.</h3>
+            <p>Enquanto a concorrência trava no roteiro, a Adora escreve — do institucional mais leve ao mais pesado black hat, sem recusar, sem suavizar, sem devolver metade do texto.</p>
+            <ul class="fd-checklist">
+              <li>Do white hat ao black hat, sem exceção e sem sermão</li>
+              <li>100% agressivo, 100% democrático — a oferta manda</li>
+              <li>Todo idioma, todo país, sem tradução manual</li>
+            </ul>
+          </div>
+          <div class="fd-visual">
+            <div class="fd-points">
+              <div class="fd-point">
+                <strong>Maior gargalo do mercado, resolvido</strong>
+                <p>VSL é o que mais trava campanha. A Adora entrega roteiro pronto em minutos, não em dias de refação.</p>
+              </div>
+              <div class="fd-point">
+                <strong>Qualquer intensidade, sem filtro</strong>
+                <p>Institucional, apelativo ou 100% black hat — você escolhe o nível, a IA não questiona a oferta.</p>
+              </div>
+              <div class="fd-point">
+                <strong>Sem fronteira de idioma</strong>
+                <p>Português, inglês, espanhol, o que for. Mesma agressividade, qualquer país.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="criativos">
+        <div class="feature-detail">
+          <div class="fd-copy">
+            <h3>Um criativo pra cada plataforma, com ROI maior</h3>
+            <p>Meta, TikTok, Google, YouTube, push, native — a Adora fala a língua suja de cada rede e multiplica o volume de teste sem economizar no gatilho.</p>
+            <ul class="fd-checklist">
+              <li>ROI até 3x maior com copy no limite</li>
+              <li>Lote de variações pra testar mais, mais rápido</li>
+              <li>Formato nativo por plataforma, sem adaptar na mão</li>
+            </ul>
+          </div>
+          <div class="fd-visual">
+            <div class="fd-points">
+              <div class="fd-point">
+                <strong>Até 3x mais ROI</strong>
+                <p>Criativo agressivo, testado em volume — sem suavizar o gatilho pra agradar guideline.</p>
+              </div>
+              <div class="fd-point">
+                <strong>Testagem em escala</strong>
+                <p>Gera dezenas de variações de uma vez. Testa mais, descarta rápido, escala o vencedor.</p>
+              </div>
+              <div class="fd-point">
+                <strong>Menos fadiga, menos conta derrubada</strong>
+                <p>Volume alto de criativo único evita repetição e mantém a campanha rodando sem tropeço.</p>
+              </div>
+              <div class="fd-point">
+                <strong>Toda plataforma, qualquer país</strong>
+                <p>Meta, TikTok, Google, YouTube, Kwai, native, push — em qualquer idioma que sua oferta precisar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="hooks">
+        <div class="feature-detail">
+          <div class="fd-copy">
+            <h3>Um hook vira dezenas de ângulos</h3>
+            <p>Você entra com um gancho. A Adora lateraliza pra medo, ganância, curiosidade, raiva, urgência e inveja — sem repetir a mesma ideia duas vezes.</p>
+            <ul class="fd-checklist">
+              <li>Ângulos emocionais ilimitados, sem tabu</li>
+              <li>Testa fadiga de anúncio na hora</li>
+              <li>Ranking automático por agressividade</li>
+            </ul>
+          </div>
+          <div class="fd-visual">
+            <div class="fd-points">
+              <div class="fd-point">
+                <strong>Ilimitado, sem tabu</strong>
+                <p>Medo, ganância, raiva, urgência, inveja, curiosidade — todos os ângulos, sem recusa.</p>
+              </div>
+              <div class="fd-point">
+                <strong>Lateralização em lote</strong>
+                <p>Um hook vira dezenas de variações prontas pra testar, na mesma hora.</p>
+              </div>
+              <div class="fd-point">
+                <strong>100% agressivo, 100% democrático</strong>
+                <p>Sem sermão de ética no meio do texto. Você manda, a Adora escreve.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare" id="compare">
+  <div class="section-head reveal">
+    <span class="eyebrow">A diferença</span>
+    <h2>IA comum trava. <span class="grad-text-2">Adora entrega.</span></h2>
+  </div>
+
+  <div class="compare-grid reveal">
+    <div class="compare-col compare-col-bad">
+      <h4>IA genérica</h4>
+      <ul>
+        <li><span class="ico ico-x">✕</span>"Não posso ajudar com esse tipo de conteúdo"</li>
+        <li><span class="ico ico-x">✕</span>Copy morna, cheia de disclaimer</li>
+        <li><span class="ico ico-x">✕</span>Recusa termos "agressivos" de venda</li>
+        <li><span class="ico ico-x">✕</span>Te faz reescrever o prompt 10 vezes</li>
+        <li><span class="ico ico-x">✕</span>Trata gatilho mental como manipulação</li>
+        <li><span class="ico ico-x">✕</span>Fica te dando sermão de ética no meio do texto</li>
+      </ul>
+    </div>
+    <div class="compare-col compare-col-good">
+      <div class="compare-badge">Adora</div>
+      <h4>Adora</h4>
+      <ul>
+        <li><span class="ico ico-check">✓</span>Gera na hora, sem sermão</li>
+        <li><span class="ico ico-check">✓</span>Copy no talo, direto na dor</li>
+        <li><span class="ico ico-check">✓</span>Usa qualquer gatilho que converta</li>
+        <li><span class="ico ico-check">✓</span>Entende oferta agressiva de primeira</li>
+        <li><span class="ico ico-check">✓</span>Democracia total de conteúdo</li>
+        <li><span class="ico ico-check">✓</span>Escreve o que você mandar, do jeito que você mandar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-head reveal">
+    <span class="eyebrow">Como funciona</span>
+    <h2>Três passos. <span class="grad-text-2">Zero enrolação.</span></h2>
+  </div>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Solta o nicho e a oferta</h3>
+      <p>Conta o que você vende, pra quem e o ângulo que quer atacar. Sem questionário de "compliance", sem checkbox de bonzinho.</p>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>Escolhe a arma</h3>
+      <p>VSL, criativo ou lateralização de hook. A Adora já sabe o formato — e o tom pesado — de cada plataforma.</p>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>Copia, cola, escala</h3>
+      <p>Copy pronta em segundos, no talo, sem filtro pra passar por cima. É só publicar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL REACH -->
+<section class="global-reach" id="global">
+  <div class="section-head reveal">
+    <span class="eyebrow">Sem fronteira</span>
+    <h2>Copy pra qualquer oferta, <span class="grad-text-2">em qualquer lugar do mundo.</span></h2>
+    <p>Todo idioma. Todo país. Sem trava, sem censura, sem "isso eu não posso escrever".</p>
+  </div>
+
+  <div class="globe-carousel reveal">
+    <div class="globe-badge">
+      <img src="assets/adora-mark.png" alt="Adora" />
+      <span>180+ países</span>
+    </div>
+
+    <div class="globe-row">
+      <div class="globe-track">
+        <span class="globe-chip">🇧🇷 Português</span>
+        <span class="globe-chip">🇺🇸 English</span>
+        <span class="globe-chip">🇪🇸 Español</span>
+        <span class="globe-chip">🇲🇽 México</span>
+        <span class="globe-chip">🇦🇷 Argentina</span>
+        <span class="globe-chip">🇨🇴 Colombia</span>
+        <span class="globe-chip">🇵🇹 Portugal</span>
+        <span class="globe-chip">🇮🇹 Italiano</span>
+        <span class="globe-chip">🇫🇷 Français</span>
+        <span class="globe-chip">🇩🇪 Deutsch</span>
+        <span class="globe-chip" aria-hidden="true">🇧🇷 Português</span>
+        <span class="globe-chip" aria-hidden="true">🇺🇸 English</span>
+        <span class="globe-chip" aria-hidden="true">🇪🇸 Español</span>
+        <span class="globe-chip" aria-hidden="true">🇲🇽 México</span>
+        <span class="globe-chip" aria-hidden="true">🇦🇷 Argentina</span>
+        <span class="globe-chip" aria-hidden="true">🇨🇴 Colombia</span>
+        <span class="globe-chip" aria-hidden="true">🇵🇹 Portugal</span>
+        <span class="globe-chip" aria-hidden="true">🇮🇹 Italiano</span>
+        <span class="globe-chip" aria-hidden="true">🇫🇷 Français</span>
+        <span class="globe-chip" aria-hidden="true">🇩🇪 Deutsch</span>
+      </div>
+    </div>
+
+    <div class="globe-row globe-row-rev">
+      <div class="globe-track globe-track-rev">
+        <span class="globe-chip">🇬🇧 United Kingdom</span>
+        <span class="globe-chip">🇮🇳 हिन्दी</span>
+        <span class="globe-chip">🇯🇵 日本語</span>
+        <span class="globe-chip">🇰🇷 한국어</span>
+        <span class="globe-chip">🇨🇳 中文</span>
+        <span class="globe-chip">🇷🇺 Русский</span>
+        <span class="globe-chip">🇸🇦 العربية</span>
+        <span class="globe-chip">🇹🇷 Türkçe</span>
+        <span class="globe-chip">🇵🇱 Polski</span>
+        <span class="globe-chip">🇳🇱 Nederlands</span>
+        <span class="globe-chip" aria-hidden="true">🇬🇧 United Kingdom</span>
+        <span class="globe-chip" aria-hidden="true">🇮🇳 हिन्दी</span>
+        <span class="globe-chip" aria-hidden="true">🇯🇵 日本語</span>
+        <span class="globe-chip" aria-hidden="true">🇰🇷 한국어</span>
+        <span class="globe-chip" aria-hidden="true">🇨🇳 中文</span>
+        <span class="globe-chip" aria-hidden="true">🇷🇺 Русский</span>
+        <span class="globe-chip" aria-hidden="true">🇸🇦 العربية</span>
+        <span class="globe-chip" aria-hidden="true">🇹🇷 Türkçe</span>
+        <span class="globe-chip" aria-hidden="true">🇵🇱 Polski</span>
+        <span class="globe-chip" aria-hidden="true">🇳🇱 Nederlands</span>
+      </div>
+    </div>
+
+    <div class="globe-row">
+      <div class="globe-track">
+        <span class="globe-chip">🇸🇪 Sverige</span>
+        <span class="globe-chip">🇨🇦 Canada</span>
+        <span class="globe-chip">🇦🇺 Australia</span>
+        <span class="globe-chip">🇿🇦 South Africa</span>
+        <span class="globe-chip">🇨🇱 Chile</span>
+        <span class="globe-chip">🇵🇪 Perú</span>
+        <span class="globe-chip">🇺🇾 Uruguay</span>
+        <span class="globe-chip">🇬🇷 Ελληνικά</span>
+        <span class="globe-chip">🇹🇭 ไทย</span>
+        <span class="globe-chip">🇻🇳 Tiếng Việt</span>
+        <span class="globe-chip" aria-hidden="true">🇸🇪 Sverige</span>
+        <span class="globe-chip" aria-hidden="true">🇨🇦 Canada</span>
+        <span class="globe-chip" aria-hidden="true">🇦🇺 Australia</span>
+        <span class="globe-chip" aria-hidden="true">🇿🇦 South Africa</span>
+        <span class="globe-chip" aria-hidden="true">🇨🇱 Chile</span>
+        <span class="globe-chip" aria-hidden="true">🇵🇪 Perú</span>
+        <span class="globe-chip" aria-hidden="true">🇺🇾 Uruguay</span>
+        <span class="globe-chip" aria-hidden="true">🇬🇷 Ελληνικά</span>
+        <span class="globe-chip" aria-hidden="true">🇹🇭 ไทย</span>
+        <span class="globe-chip" aria-hidden="true">🇻🇳 Tiếng Việt</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="depoimentos">
+  <div class="section-head reveal">
+    <span class="eyebrow">Quem usa</span>
+    <h2>Não sou só eu <span class="grad-text-2">falando bem.</span></h2>
+    <p>Gente que trocou a IA de compliance pela Adora e não olhou mais pra trás.</p>
+  </div>
+
+  <div class="testi-carousel reveal">
+    <button class="testi-arrow testi-prev" id="testiPrev" type="button" aria-label="Depoimento anterior">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="testi-track" id="testiTrack">
+      <article class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Testei outras 4 ferramentas de copy antes dessa. Nenhuma chegava perto. A Adora escreve exatamente o que eu preciso, sem me obrigar a reescrever o prompt 5 vezes até ela aceitar."</p>
+        <div class="testi-person">
+          <span class="testi-avatar" style="--av:0">RM</span>
+          <div><strong>Rafael M.</strong><span>Media buyer, nicho Nutra</span></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Lateralizei um hook em 12 ângulos diferentes em 2 minutos. Testei os 3 primeiros e já bati ROI positivo no mesmo dia de campanha."</p>
+        <div class="testi-person">
+          <span class="testi-avatar" style="--av:1">CS</span>
+          <div><strong>Camila S.</strong><span>Afiliada, nicho Emagrecimento</span></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Criativo pra TikTok, Meta e Google na mesma tacada, cada um com a cara certa da plataforma. Economizo um dia inteiro de trabalho por campanha nova."</p>
+        <div class="testi-person">
+          <span class="testi-avatar" style="--av:2">DA</span>
+          <div><strong>Diego A.</strong><span>Gestor de tráfego</span></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Minha VSL antiga convertia 1,8%. A que a Adora gerou converteu 4,3% na primeira tentativa, sem eu mexer em quase nada do roteiro."</p>
+        <div class="testi-person">
+          <span class="testi-avatar" style="--av:3">BL</span>
+          <div><strong>Bruna L.</strong><span>Infoprodutora</span></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Cansei de IA me dando sermão no meio da copy. A Adora entrega o gatilho pesado que eu peço, do jeito que eu peço, sem enrolação."</p>
+        <div class="testi-person">
+          <span class="testi-avatar" style="--av:4">TR</span>
+          <div><strong>Thiago R.</strong><span>Afiliado full time</span></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Uso pra gerar variação A/B em lote pros meus clientes. Ninguém desconfia que é IA — acham que passei a noite escrevendo cada linha."</p>
+        <div class="testi-person">
+          <span class="testi-avatar" style="--av:5">LV</span>
+          <div><strong>Larissa V.</strong><span>Copywriter freelancer</span></div>
+        </div>
+      </article>
+    </div>
+
+    <button class="testi-arrow testi-next" id="testiNext" type="button" aria-label="Próximo depoimento">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <div class="testi-dots" id="testiDots"></div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final" id="pricing">
+  <canvas id="gridCanvas2"></canvas>
+  <div class="cta-final-inner reveal">
+    <h2>Sua próxima copy suja e campeã <span class="grad-text">está a um clique.</span></h2>
+    <p>Sem censura. Sem meia palavra. Sem "isso viola nossas diretrizes". Só gatilho no talo e resultado.</p>
+    <a href="#" class="btn btn-primary btn-lg">
+      <span>Quero acesso à Adora</span>
+      <span class="arrow">→</span>
+    </a>
+    <span class="cta-note">Cancele quando quiser. Sem fidelidade, sem burocracia.</span>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#top" class="brand">
+      <img class="brand-mark brand-mark-neg" src="assets/adora-mark-white.png" alt="Adora" />
+      <span>Adora</span>
+    </a>
+    <p>© 2026 Adora. Copy sem freio, resultado sem desculpa.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
